@@ -1,46 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyce da Costa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Joy's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="profile box">
-        <img class="profile-pic" src="img/dioice.jpg" alt="profile">
-        <h1 class="title">Joyce da Costa</h1>
-        <span>Minas Gerais, Brasil</span>
-        <p>Quality Assurance at 4intelligence</p>
-        <ul class="redes-sociais">
+    <header class="header">
+        <a href="#home" class="logo">Joyce <span>da Costa</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <!-- <a href="#contact">Contact</a> -->
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Joyce</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis illo porro voluptate nesciunt, rem
+                expedita accusantium, eligendi commodi esse dignissimos aliquam id sint ratione. Placeat explicabo
+                eveniet eaque esse impedit?</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/joyce-dacosta/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/dioic3"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/dioice.jpeg/"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="https://www.linkedin.com/in/joyce-dacosta/" class="btn">Contact Me</a>
+                <a href="#services" class="btn">My Services</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="img/2024-07-27_19-02.png" alt="">
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Quality Assurance</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eius amet pariatur neque
+                        repellat excepturi dolore, in sapiente delectus quasi!</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Fotografia</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eius amet pariatur neque
+                        repellat excepturi dolore, in sapiente delectus quasi!</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Monitoria com Programação</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eius amet pariatur neque
+                        repellat excepturi dolore, in sapiente delectus quasi!</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Free-lancer com Testes de Software</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eius amet pariatur neque
+                        repellat excepturi dolore, in sapiente delectus quasi!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/joyce-dacosta/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/dioic3"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/dioice.jpeg/"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <ul class="list">
             <li>
-                <a href="https://github.com/dioic3">
-                    <img src="img/github.svg" alt="github">
-                </a>
+                <a href="#">FAQ</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/joyce-dacosta">
-                    <img src="img/linkedin.svg" alt="linkedin">
-                </a>
+                <a href="#">Services</a>
             </li>
             <li>
-                <a href="https://www.instagram.com/diioice">
-                    <img src="img/instagram.svg" alt="instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://envasadorapilulas.github.io/">
-                    <img src="img/eye.svg" alt="projeto-fetin">
-                </a>
+                <a href="#">About Me</a>
             </li>
         </ul>
-    </div>
+        <p class="copyright">
+            © Joyce da Costa | All Rights Reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
